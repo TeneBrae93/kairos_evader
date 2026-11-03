@@ -43,6 +43,7 @@ sudo apt install mingw-w64
 # Install Python dependencies
 pip install -r requirements.txt
 ```
+
 ## Usage
 Generate an EXE
 ```bash
