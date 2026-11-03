@@ -16,6 +16,15 @@ Kairos Evader takes raw shellcode (from any C2 framework) and produces a fully s
 - **Optional sandbox evasion** - configurable sleep delay with timing verification
 - **No console window** - silent execution for both DLL and EXE formats
 
+### Limitations
+
+Kairos Evader is designed to bypass signature-based detection (Windows Defender, 
+basic AV). It is not designed to bypass enterprise EDR solutions (CrowdStrike, 
+SentinelOne, MDE, etc.) that use kernel-level telemetry, userland hooking, and 
+behavioral analysis.
+
+Kairos Sec primarily does standard pentesting. Full EDR evasion is not something I do regularly. If you'd like to open a PR to add additional evasion... you should!
+
 ## Use Cases
 
 | Format | Use Case |
@@ -68,14 +77,6 @@ Kairos Evader is framework-agnostic - it works with any raw shellcode (but has o
 ```bash
 generate mtls --mtls [LISTENER-IP]:[LISTENER-PORT] --os windows --arch amd64 --format shellcode --save /home/tyler/payload.bin
 ```
-## Limitations
-
-Kairos Evader is designed to bypass **signature-based detection** (Windows Defender, 
-basic AV). It is not designed to bypass **enterprise EDR solutions** (CrowdStrike, 
-SentinelOne, MDE, etc.) that use kernel-level telemetry, userland hooking, and 
-behavioral analysis.
-
-Future versions may incorporate additional evasion techniques. Contributions welcome.
 
 ### Disclaimer
 This tool is intended for authorized penetration testing and security research only.
