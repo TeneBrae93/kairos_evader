@@ -324,16 +324,9 @@ def build(payload_path: str, output_path: str, fmt: str, delay: int):
 
 def banner():
     print("""
-Kairos Evader - Hardened AES-256 Encrypted Shellcode Loader
+Kairos Evader - AES-256 Encrypted Shellcode Loader
 Author: Tyler Ramsbey
-https://kairossec.com
-
-Generates randomized loaders as DLL or EXE with Defender evasion.
-
-Usage:
-    python3 kairos_evader.py --payload payload.bin --dll comctl32.dll
-    python3 kairos_evader.py --payload payload.bin --exe updater.exe
-    python3 kairos_evader.py --payload payload.bin --exe updater.exe --delay 10
+https://kairos-sec.com
 """)
 
 
