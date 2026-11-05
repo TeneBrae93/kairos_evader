@@ -2,7 +2,7 @@
 """
 Kairos Evader - Hardened AES-256 Encrypted Shellcode Loader
 Author: Tyler Ramsbey
-https://kairossec.com
+https://kairos-sec.com
 
 Generates randomized loaders as DLL or EXE with Defender evasion.
 
